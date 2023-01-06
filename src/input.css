@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants {
+    .rotate {
+        transition: transform 2s;
+    }
+    .rotate:hover {
+        transform: rotate(180deg);
+    }
+}
+
+@responsive {
+    .zoom {
+        transform: scale(2);
+    }
+}
+
+.alert {
+    @apply mt-4 mb-6 w-1/4 mx-auto bg-gray-500 rounded-lg;
+}
+.alert-danger{
+    @apply mt-4 mb-6 w-1/4 mx-auto bg-red-500 rounded-lg;
+}
+.alert-warning{
+    @apply mt-4 mb-6 w-1/4 mx-auto bg-yellow-500 rounded-lg;
+}
+.alert-info{
+    @apply mt-4 mb-6 w-1/4 mx-auto bg-green-500 rounded-lg;
+}
